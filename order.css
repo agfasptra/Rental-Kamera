@@ -1,0 +1,37 @@
+:root {
+  --main-color: #ff4d00eb;
+  --text-color: #020102;
+  --bg-color: #fff;
+}
+.pemesanan {
+  font-family: Arial, sans-serif;
+  background: url("background.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.form-container {
+  padding: 20px;
+  border-radius: 10px;
+  color: rgb(193, 42, 42);
+  width: 300px;
+}
+.form-container input,
+.form-container select,
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+.button {
+  width: 100px;
+  color: var(--text-color);
+}
+.button:hover {
+  background-color: var(--main-color);
+}

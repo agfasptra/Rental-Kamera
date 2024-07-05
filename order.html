@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rental Kamera</title>
+    <link rel="stylesheet" href="order.css" />
+  </head>
+  <body>
+    <section class="pemesanan">
+      <div class="form-container">
+        <form id="order-form" method="POST" action="order.php">
+          <input
+            type="text"
+            name="nama"
+            id="nama"
+            placeholder="Nama"
+            required
+          />
+          <select name="jeniskamera" id="jeniskamera" required>
+            <option value="">Jenis Kamera</option>
+            <option value="1">Sony A5000-Rp 50.000/24jam</option>
+            <option value="2">Sony A6000-Rp 60.000/24jam</option>
+            <option value="3">Canon EOS 1200D-Rp 70.000/24jam</option>
+            <option value="4">Canon EOS 700D-Rp 80.000/24jam</option>
+            <option value="5">Canon EOS M10-Rp 90.000/24jam</option>
+            <option value="6">Canon EOS M3-Rp 100.000/24jam</option>
+          </select>
+          <input
+            type="tel"
+            name="noTelp"
+            id="noTelp"
+            placeholder="No Telp"
+            required
+          />
+          <input
+            type="text"
+            name="alamat"
+            id="alamat"
+            placeholder="Alamat"
+            required
+          />
+          <input
+            type="date"
+            name="date"
+            id="date"
+            placeholder="Tanggal"
+            required
+          />
+          <div class="button">
+            <input type="submit" name="submit" value="Order" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
